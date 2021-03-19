@@ -109,6 +109,14 @@
 
 
 
+
+
+
+
+
+
+
+
 // ricalcando la soluzione appena vista per la width, generare html + js
 // necessario per ottenere altri 2 tasti - e + che andranno a modificare l'altezza in accordo con il valore centale
 
@@ -178,13 +186,20 @@
 
 
 
+
+
+
+
+
+
+
+
 // ad ogni pressione dei tasti +/- modificare il background-color del cerchio con colore casuale.
 
 
-function getRandomValue() {
-    var localMin = 0;
-    var localMax = 7;
-    return Math.floor(Math.random() * localMax);
+function randomColor(){
+    var col = 'rgb(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ','+ Math.floor(Math.random() * 256) + ')';
+    return col;
 }
 function minusClickWidth() {
     var value1 = $('#target-width').text();
@@ -195,8 +210,8 @@ function minusClickWidth() {
 }
     $('#target-width').text(value1);
     $('#Circle').css('width', (value1 * 10) + 'px');
-    var rnd = getRandomValue();
-    $('#Circle').css('background-color', color[rnd]);
+    var rnd = randomColor()
+    $('#Circle').css('background-color', rnd);
 }
 function minusClickHeight() {
     var value2 = $('#target-height').text();
@@ -207,8 +222,8 @@ function minusClickHeight() {
 }
     $('#target-height').text(value2);
     $('#Circle').css('height', (value2 * 10) + 'px');
-    var rnd = getRandomValue();
-    $('#Circle').css('background-color', color[rnd]);
+    var rnd = randomColor()
+    $('#Circle').css('background-color', rnd);
 }
 function plusClickWidth() {
   var value1 = $('#target-width').text();
@@ -219,8 +234,8 @@ function plusClickWidth() {
 }
     $('#target-width').text(value1);
     $('#Circle').css('width', (value1 * 10) + 'px');
-    var rnd = getRandomValue();
-    $('#Circle').css('background-color', color[rnd]);
+    var rnd = randomColor()
+    $('#Circle').css('background-color', rnd);
 }
 function plusClickHeight() {
   var value2 = $('#target-height').text();
@@ -231,8 +246,8 @@ function plusClickHeight() {
 }
     $('#target-height').text(value2);
     $('#Circle').css('height', (value2 * 10) + 'px');
-    var rnd = getRandomValue();
-    $('#Circle').css('background-color', color[rnd]);
+    var rnd = randomColor()
+    $('#Circle').css('background-color', rnd);
 }
 
 function init() {
