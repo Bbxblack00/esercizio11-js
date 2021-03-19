@@ -113,6 +113,73 @@
 // necessario per ottenere altri 2 tasti - e + che andranno a modificare l'altezza in accordo con il valore centale
 
 
+// function minusClickWidth() {
+//     var value1 = $('#target-width').text();
+//     value1--;
+//     if (value1 < 0) {
+//         value1 = 0;
+//         alert('Non fare il furbo!');
+// }
+//     $('#target-width').text(value1);
+//     $('#Circle').css('width', (value1 * 10) + 'px');
+// }
+// function minusClickHeight() {
+//     var value2 = $('#target-height').text();
+//     value2--;
+//     if (value2 < 0) {
+//         value2 = 0;
+//         alert('Non fare il furbo!');
+// }
+//     $('#target-height').text(value2);
+//     $('#Circle').css('height', (value2 * 10) + 'px');
+// }
+// function plusClickWidth() {
+//   var value1 = $('#target-width').text();
+//   value1++;
+//   if (value1 > 20) {
+//       value1 = 0;
+//       alert('Non fare il furbo!');
+// }
+//     $('#target-width').text(value1);
+//     $('#Circle').css('width', (value1 * 10) + 'px');
+// }
+// function plusClickHeight() {
+//   var value2 = $('#target-height').text();
+//   value2++;
+//   if (value2 > 20) {
+//       value2 = 0;
+//       alert('Non fare il furbo!');
+// }
+//     $('#target-height').text(value2);
+//     $('#Circle').css('height', (value2 * 10) + 'px');
+// }
+//
+// function init() {
+//
+//     // VALUES
+//     $('#target-width').text(10);
+//     $('#target-height').text(10);
+//     // BUTTONS
+//     $('#minus-width').click(minusClickWidth);
+//     $('#plus-width').click(plusClickWidth);
+//     $('#minus-height').click(minusClickHeight);
+//     $('#plus-height').click(plusClickHeight);
+//     // VARIABILI
+//     var value1 = $('#target-Width').html();
+//     var value2 = $('#target-Height').html();
+//     // CIRCLE
+//     $('#Circle').css('width', value1 + 'px');
+//     $('#Circle').css('height', value2 + 'px');
+// }
+// init();
+
+
+
+
+
+
+// ad ogni pressione dei tasti +/- modificare il background-color del cerchio con colore casuale.
+
 function minusClickWidth() {
     var value1 = $('#target-width').text();
     value1--;
@@ -165,6 +232,7 @@ function init() {
     $('#minus-height').click(minusClickHeight);
     $('#plus-height').click(plusClickHeight);
     // VARIABILI
+    var color = ['yellow', 'green', 'white', 'red', 'bue', 'gray', 'darkslategray'];
     var value1 = $('#target-Width').html();
     var value2 = $('#target-Height').html();
     // CIRCLE
