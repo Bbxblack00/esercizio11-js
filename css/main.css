@@ -9,10 +9,11 @@
     height: 100vh;
     background-color: purple;
     color: white;
-    font-size: 39px;
-    justify-content: center;
-    align-items: center;
 }
-button {
-  height: 39px;
+.container > * {
+    margin: auto;
+}
+.circle {
+    border-radius: 100%;
+    background-color: greenyellow;
 }
